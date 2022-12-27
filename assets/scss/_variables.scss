@@ -1,0 +1,44 @@
+// Themes
+$themes: (
+  light: (
+    color: black,
+    background: white,
+    background2: lightslategray,
+    goldy: gold,
+    accent1: #7D82B8,
+    accent2: #FA198B,
+  ),
+  dark: (
+    color: white,
+    background: black,
+    background2: gray,
+    goldy: gold,
+    accent1: #7D82B8,
+    accent2: #FA198B,
+  ),
+);
+
+// Sizes
+$sides: (
+  t: top,
+  l: left,
+  r: right,
+  b: bottom 
+);
+
+$positions: (
+  rel: relative,
+  abs: absolute,
+  fix: fixed,
+  sta: static,
+  sti: sticky,
+);
+
+$displays: (
+  inline: inline,
+  block: block,
+  inline-block: inline-block,
+  flex: flex,
+  inline-flex: inline-flex,
+  grid: grid,
+)

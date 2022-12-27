@@ -1,0 +1,33 @@
+@for $i from 1 through 10{
+    $prefix: $i * 0.25;
+    .m-#{$i}{
+        margin: #{$prefix}rem;
+    }
+    .p-#{$i}{
+        padding: #{$prefix}rem;
+    }
+    .mx-#{$i}{
+        margin-left: #{$prefix}rem;
+        margin-right: #{$prefix}rem;
+    }
+    .px-#{$i}{
+        padding-left: #{$prefix}rem;
+        padding-right: #{$prefix}rem;
+    }
+    .my-#{$i}{
+        margin-top: #{$prefix}rem;
+        margin-bottom: #{$prefix}rem;
+    }
+    .py-#{$i}{
+        padding-top: #{$prefix}rem;
+        padding-bottom: #{$prefix}rem;
+    }
+    @each $key, $value in $sides{
+        .p#{$key}-#{$i}{
+            padding-#{$value}: #{$prefix}rem;
+        }
+        .m#{$key}-#{$i}{
+            margin-#{$value}: #{$prefix}rem;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@for $i from 1 through 30{
+    $prefix: #{$i * 0.25}rem;
+
+    .h-#{$i}{
+        height: $prefix;
+    }
+    .w-#{$i}{
+        width: $prefix;
+    }
+}

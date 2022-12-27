@@ -1,0 +1,42 @@
+@each $key, $value in $positions{
+    .pos-#{$key}{
+        position: $value;
+    }
+}
+
+// Absolute position
+.p-abs-t50-transY50{
+    @extend .pos-abs;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// Absolute position
+.p-abs-l50-transX50{
+    @extend .pos-abs;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.p-abs-center{
+    @extend .pos-abs;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@for $i from 1 through 6{
+    $prefix: #{$i*0.25}rem;
+    @each $key, $value in $sides{
+        .#{$key}-#{$i}{
+            #{$value}: #{$prefix};
+        }
+    }
+}
+
+
+@each $key, $value in $sides{
+    .#{$key}-100{
+        #{$value}: 100%;
+    }
+}

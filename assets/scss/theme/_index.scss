@@ -1,0 +1,96 @@
+.bg-none{
+    background-color: transparent;
+}
+.bg-background{
+    @include themify($themes) {
+        background-color: themed('background');
+    }
+}
+.bg-background2{
+    @include themify($themes) {
+        background-color: themed('background2');
+    }
+}
+.bg-color{
+    @include themify($themes) {
+        background-color: themed('color');
+    }
+}
+.bg-gold{
+    @include themify($themes) {
+        background-color: themed('goldy');
+    }
+}
+.bg-accent1{
+    @include themify($themes) {
+        background-color: themed('accent1');
+    }
+}
+.bg-accent2{
+    @include themify($themes) {
+        background-color: themed('accent2');
+    }
+}
+.front-none{
+    color: none;
+}
+.front-background{
+    @include themify($themes) {
+        color: themed('background');
+    }
+}
+.front-background2{
+    @include themify($themes) {
+        color: themed('background2');
+    }
+}
+.front-color{
+    @include themify($themes) {
+        color: themed('color');
+    }
+}
+.front-gold{
+    @include themify($themes) {
+        color: themed('goldy');
+    }
+}
+.front-accent1{
+    @include themify($themes) {
+        color: themed('accent1');
+    }
+}
+.front-accent2{
+    @include themify($themes) {
+        color: themed('gold');
+    }
+}
+
+#switchTheme {
+    @extend .pos-rel;
+    @extend .w-6;
+    @extend .h-6;
+    @extend .bg-gold;
+    @extend .border-none;
+    @extend .pill;
+    @extend .overflow-hidden;
+    &::before{
+        content: '';
+        @extend .h-6;
+        @extend .w-6;
+        @extend .pos-abs;
+        transition: left 0.2s ease-in-out, bottom 0.2s ease-in-out;
+        @extend .b-1;
+        @extend .l-2;
+        @extend .bg-background;
+        @extend .pill;
+    }
+}
+
+.theme-dark{
+    #switchTheme{
+        &::before{
+            @extend .l-100;
+            @extend .b-100;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.menu{
+    @extend .bg-background2;
+    @extend .d-flex-spread-center;
+    @extend .p-3;
+    .items{
+        @extend .d-flex;
+        align-items: center;
+        >*{
+            @extend .cursor-pointer;
+        }
+        .item{
+            @extend .p-2;
+            &:hover{
+                @extend .bg-background;
+            }
+        }
+        #switchTheme{
+            @extend .m-2;
+            &::before{
+                @extend .bg-background2;
+            }
+        }
+    }
+}

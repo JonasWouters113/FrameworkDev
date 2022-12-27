@@ -1,0 +1,16 @@
+@each $key, $value in $displays{
+    .d-#{$key}{
+        display: $value;
+    }
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+@for $i from 1 through 6{
+    $prefix: #{$i * 0.25}rem;
+    .gap-#{$i}{
+        gap: $prefix;
+    }
+}

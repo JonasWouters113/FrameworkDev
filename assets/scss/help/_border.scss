@@ -1,0 +1,14 @@
+@for $i from 1 through 10{
+    $prefix: #{$i * 0.5s}rem;
+    .br-#{$i}{
+        border-radius: $prefix;
+    }
+}
+
+.pill{
+    border-radius: 50rem;
+}
+
+.border-none{
+    border: 0;
+}

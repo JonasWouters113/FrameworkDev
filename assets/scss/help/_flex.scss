@@ -1,0 +1,16 @@
+.d-flex-center{
+    @extend .d-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex-spread{
+    @extend .d-flex;
+    justify-content: space-between;
+}
+
+.d-flex-spread-center{
+    @extend .d-flex;
+    justify-content: space-between;
+    align-items: center;
+}
