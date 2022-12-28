@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "husky": "^8.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prod"
+    }
+  }
+}
