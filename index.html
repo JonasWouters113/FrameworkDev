@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/extra.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="name">Framework</div>
+        <div class="items">
+            <div>
+                <button onclick="switchTheme()" id="switchTheme"></button>
+            </div>
+            <div class="item">Lorem.</div>
+            <div class="item">Sed?</div>
+            <div class="item">Harum.</div>
+            <div class="item">Totam.</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="examples">
+            <h1>Spacing</h1>
+            <h2>Padding</h2>
+            <h3>All sides</h3>
+            <div>
+                <div class="p-1 w-30 h-10 d-flex-center mb-1 bg-color front-background">p-1</div>
+                <div class="p-2 w-30 h-10 d-flex-center mb-1 bg-color front-background">p-2</div>
+                <div class="p-3 w-30 h-10 d-flex-center mb-1 bg-color front-background">p-3</div>
+                <div class="p-4 w-30 h-10 d-flex-center mb-1 bg-color front-background">p-4</div>
+                <div class="p-5 w-30 h-10 d-flex-center mb-1 bg-color front-background">p-5</div>
+            </div>
+            <h3>Horizontal</h3>
+            <div>
+                <div class="px-1 w-30 h-10 d-flex-center mb-1 bg-color front-background">px-1</div>
+                <div class="px-2 w-30 h-10 d-flex-center mb-1 bg-color front-background">px-2</div>
+                <div class="px-3 w-30 h-10 d-flex-center mb-1 bg-color front-background">px-3</div>
+                <div class="px-4 w-30 h-10 d-flex-center mb-1 bg-color front-background">px-4</div>
+                <div class="px-5 w-30 h-10 d-flex-center mb-1 bg-color front-background">px-5</div>
+            </div>
+            <h3>Vertical</h3>
+            <div>
+                <div class="py-1 w-30 h-10 d-flex-center mb-1 bg-color front-background">py-1</div>
+                <div class="py-2 w-30 h-10 d-flex-center mb-1 bg-color front-background">py-2</div>
+                <div class="py-3 w-30 h-10 d-flex-center mb-1 bg-color front-background">py-3</div>
+                <div class="py-4 w-30 h-10 d-flex-center mb-1 bg-color front-background">py-4</div>
+                <div class="py-5 w-30 h-10 d-flex-center mb-1 bg-color front-background">py-5</div>
+            </div>
+            <h2>Margin</h2>
+            <h3>All sides</h3>
+            <div>
+                <div class="m-1 w-30 h-10 d-flex-center bg-color front-background">m-1</div>
+                <div class="m-2 w-30 h-10 d-flex-center bg-color front-background">m-2</div>
+                <div class="m-3 w-30 h-10 d-flex-center bg-color front-background">m-3</div>
+                <div class="m-4 w-30 h-10 d-flex-center bg-color front-background">m-4</div>
+                <div class="m-5 w-30 h-10 d-flex-center bg-color front-background">m-5</div>
+            </div>
+            <h3>Horizontal</h3>
+            <div>
+                <div class="mx-1 w-30 h-10 d-flex-center mb-1 bg-color front-background">mx-1</div>
+                <div class="mx-2 w-30 h-10 d-flex-center mb-1 bg-color front-background">mx-2</div>
+                <div class="mx-3 w-30 h-10 d-flex-center mb-1 bg-color front-background">mx-3</div>
+                <div class="mx-4 w-30 h-10 d-flex-center mb-1 bg-color front-background">mx-4</div>
+                <div class="mx-5 w-30 h-10 d-flex-center mb-1 bg-color front-background">mx-5</div>
+            </div>
+            <h3>Vertical</h3>
+            <div>
+                <div class="my-1 w-30 h-10 d-flex-center bg-color front-background">my-1</div>
+                <div class="my-2 w-30 h-10 d-flex-center bg-color front-background">my-2</div>
+                <div class="my-3 w-30 h-10 d-flex-center bg-color front-background">my-3</div>
+                <div class="my-4 w-30 h-10 d-flex-center bg-color front-background">my-4</div>
+                <div class="my-5 w-30 h-10 d-flex-center bg-color front-background">my-5</div>
+            </div>
+        </div>
+        <div class="examples">
+            <h1>Colors</h1>
+            <h2>Background</h2>
+            <div class="d-flex-spread flex-wrap gap-2">
+                <div class="bg-color front-background w-30 h-10">.bg-color</div>
+                <div class="bg-background front-color w-30 h-10">.bg-background</div>
+                <div class="bg-gold w-30 h-10">.bg-gold</div>
+                <div class="bg-accent2 w-30 h-10">.bg-accent2</div>
+                <div class="bg-accent3 w-30 h-10">.bg-accent3</div>
+            </div>
+            <h2>Foreground</h2>
+            <div class="d-flex-spread flex-wrap gap-2">
+                <div class="front-color w-30 h-10">.front-color</div>
+                <div class="front-background w-30 h-10">.front-background</div>
+                <div class="front-gold w-30 h-10">.front-gold</div>
+                <div class="front-accent2 w-30 h-10">.front-accent2</div>
+                <div class="front-accent3 w-30 h-10">.front-accent3</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>
