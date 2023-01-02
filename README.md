@@ -15,4 +15,3 @@ git clone https://github.com/JonasWouters113/FrameworkStrawberryMonitoring.git
       ```
       sass --watch assets/scss:assets/css
       ```
-3. Run with live server extension on VS code
